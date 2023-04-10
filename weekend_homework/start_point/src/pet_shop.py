@@ -50,18 +50,12 @@ def remove_pet_by_name(pet_shop,pet_name):
 
 #11
 def add_pet_to_stock(pet_shop,new_pet):
-    new_p = {
-        "name": new_pet,
-        "pet_type": "dog",
-        "breed": "Pomsky",
-        "price": 1000,
-        }
-    pet_shop["pets"].append(new_p)
+    pet_shop["pets"].append(new_pet)
 
 #12
 def get_customer_cash(customer_list_index):
     return customer_list_index["cash"]
-    
+
 #13
 def remove_customer_cash(customer_dictionary,monies_amount):
     customer_dictionary["cash"] -= monies_amount
